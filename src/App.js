@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css'
+import TopBar from "./components/TopBar"
+import Display from "./components/Display"
+import MainPalettes from "./components/MainPalettes"
+import { VarProvider } from './context/MainContext'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <VarProvider>
+      <div className='body'>
+        <TopBar />
+        <div className='full-width'>
+          <div></div>
+          <Display number={{ val: "1" }} />
+          <MainPalettes />
+          <Display number={{ val: "2" }} />
+          <div></div>
+        </div>
+      </div>
+    </VarProvider>
+  )
 }
 
-export default App;
+export default App
