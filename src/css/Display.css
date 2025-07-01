@@ -5,14 +5,14 @@
     font-size: 1.5rem;
     color: black;
     background-color: white;
-    border: 5px solid black;
+    border: 0.3125rem solid black;
     /* margin: 15px 0 0; */
     text-align: center;
-    padding: 10px;
-    padding-top: 230px;
+    padding: 0.625rem;
+    padding-top: 14.375rem;
     padding-bottom: 0;
-    text-decoration: underline 2px blue;
-    line-height: 2rem;  
+    text-decoration: underline 0.125rem blue;
+    line-height: 2rem;
 
     position: fixed;
     overflow: hidden;

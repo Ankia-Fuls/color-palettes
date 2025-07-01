@@ -150,9 +150,6 @@ function MainPalettes() {
 
     return (
         <div className="container">
-            <div className="search-bar">
-                {/* Search bar */}
-            </div>
             <div className="color-palettes-div">
                 {colors.map(colorObj =>
                 (

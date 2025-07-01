@@ -6,7 +6,6 @@ const copy = (e) => {
 
 function Palette({ array }) {
 
-
     return (
         <div className="palette">
             {(array.map(color =>

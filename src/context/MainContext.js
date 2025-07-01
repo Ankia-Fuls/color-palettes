@@ -8,7 +8,7 @@ export const VarProvider = ({ children }) => {
 
     const [inputText, setInputText] = useState("black");
     const [inputBackground, setInputBackground] = useState("white");
-    const [inputDecoration, setInputDecoration] = useState("underline 2px red");
+    const [inputDecoration, setInputDecoration] = useState("underline 0.125rem red");
     const [inputBorder, setInputBorder] = useState("red");
 
 
@@ -16,7 +16,7 @@ export const VarProvider = ({ children }) => {
 
         const newText = text !== "" ? text : "black";
         const newBackground = background !== "" ? background : "white";
-        const newDecoration = decoration !== "" ? `underline 2px ${decoration}` : "underline 2px blue";
+        const newDecoration = decoration !== "" ? `underline 0.125rem ${decoration}` : "underline 0.125rem blue";
         const newBorder = decoration !== "" ? decoration : "red";
 
         console.log("test")
